@@ -23,9 +23,4 @@ action "release" {
   secrets = ["HEROKU_API_KEY"]
 }
 
-workflow "New workflow" {
-  resolves = ["Send Push Notification"]
-  on = "pull_request"
-}
-
 

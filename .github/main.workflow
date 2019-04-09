@@ -23,12 +23,3 @@ action "release" {
   secrets = ["HEROKU_API_KEY"]
 }
 
-workflow "New workflow" {
-  resolves = ["Send Push Notification"]
-  on = "pull_request"
-}
-
-action "Send Push Notification" {
-  uses = "techulus/push-github-action@0.0.1"
-  secrets = ["API_KEY", "MESSAGE"]
-}

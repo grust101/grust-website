@@ -12,7 +12,7 @@ action "login" {
 action "push" {
   uses = "actions/heroku@master"
   needs = "login"
-  args = "container:push -a calm-fortress-1234 web"
+  args = "container:push -a georgiarust web"
   secrets = ["HEROKU_API_KEY"]
 }
 

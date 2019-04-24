@@ -1,9 +1,2 @@
-language: node_js
-
-node_js:
-  - 'node'
-
-script:
-  - npm install --save-dev jest
-  - npm test 
-  - npm run build
+- task: UseNode@1
+  inputs:

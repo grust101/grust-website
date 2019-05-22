@@ -1,6 +1,6 @@
 workflow "Deploy to Heroku" {
-  on = "push"
   resolves = "release"
+  on = "push"
 }
 
 action "login" {
@@ -19,6 +19,6 @@ action "push" {
 action "release" {
   uses = "actions/heroku@master"
   needs = "push"
-  args = "container:release -a calm-fortress-1234 web"
+  args = "container:release -a georgiarust web"
   secrets = ["HEROKU_API_KEY"]
 }

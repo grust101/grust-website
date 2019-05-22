@@ -1,7 +1,3 @@
-- task: UseNode@1
-  inputs:
-        script: # Modify the commands below to build your repository.
-          - npm install
-          - npm install --save-dev jest
-          - npm test
-          - npm run build
+steps:
+- script: npm install
+
